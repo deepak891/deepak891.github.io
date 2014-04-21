@@ -104,6 +104,42 @@
       it's great stuff. Just for you, we keep a list here on the site, updated weekly. 
       Enjoy.
     </p>
+    <h2>Spring security.</h2>
+    <p>
+    	1. Secure web application critical url in declarative.
+    	How to do
+	1. Register DelegatingFilterProxy instance in web deployment descriptor.
+	
+	Usage:
+	1. auto config : For typical application set this to "true". This will provide basic security service like (a) Form based login service
+	(b) Logout service (c) Http Basic authentication (d) Anonymous user (e) Remember me support (f) servlet API integration
+Implementation
+	Command to create web application
+	
+	Command
+	mvn archetype:generate -DgroupId={project-packaging} -DartifactId={project-name} -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+	Example:
+	mvn archetype:generate -DgroupId=com.samplespringch1 -DartifactId=samplespringch1 -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+	
+	Command to convert to eclipse project
+	mvn eclipse:eclipse -Dwtpversion=2.0
+	
+	
+Spring MVC
+	- Configure Dispatcher servlet
+	- Handler mapping configuration like ( BeanNameUrlHandlerMapping, SimpleUrlHandlerMapping...) default is BeanNameUrlHandlerMapping, DefaultAnotationHandlerMapping
+	- <mvc-annotation-driven/> It has feature like, validation support, message conversion , support for field formatting. 
+	
+	
+Spring + Maven (standalone)
+mvn archetype:generate -DgroupId=com.springsample.common -DartifactId=SpringExamples -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+Spring + Maven (web)
+$ mvn archetype:generate -DgroupId=com.springsample -DartifactId=springsampleWebApp -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+Setting log4j.properties
+
+    </p>
     <ul>
       <li><span class="cd">Buddha Bar</span>, <span class="artist">Claude Challe</span></li>
       <li><span class="cd">When It Falls</span>, <span class="artist">Zero 7</span></li>
